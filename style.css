@@ -21,3 +21,26 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+.steak {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    --steak_body_color: #733b24;
+    --steak_darker_color: #381c12;
+    --offset_1: 45px;
+    --offset_2: 55px;
+    transform-origin: 50% 120%;
+    animation: pulse 0.5s ease-in-out infinite;
+    z-index: 1;
+}
+
+.steak_outer {
+    border-radius: 29% 71% 10% 10% / 62% 82% 18% 38% ;
+    width: 500px;
+    height: 200px;
+    background: #934E31;
+    border: 10px solid var(--steak_darker_color);
+    box-shadow: 0 50px 0 0 var(--steak_body_color), 0 30px 0 0 var(--steak_body_color), 0 10px 0 0 var(--steak_body_color);
+}
