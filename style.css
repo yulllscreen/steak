@@ -21,3 +21,46 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+.herb {
+    position: relative;
+    display: flex;
+    z-index: 2;
+    top: 125px;
+    left: 25px;
+    transform: rotate(60deg) scaleX(1.2);
+
+}
+
+.leaf {
+    position: absolute;
+    aspect-ratio: 1/1.5;
+    width: 35px;
+    background: #1b9f1b;
+    border-radius: 50% 50% 50% 50% / 70% 70% 30% 30%;
+    transform-origin: 50% 100%;
+    transform: translateX(-50%);
+}
+
+.stem {
+    position: relative;
+    width: 5px;
+    height: 70px;
+    background: #268526;
+    transform: translateX(-50%);
+    z-index: -2;
+    top: 40px;
+
+}
+
+.leaf:nth-of-type(2) {
+    transform: translate(-50%, 12px) rotate(75deg) scale(0.8);
+    z-index: -1;
+    filter: brightness(0.95);
+}
+
+.leaf:nth-of-type(3) {
+    transform: translate(-50%, 12px)  rotate(-75deg) scale(0.8);
+    z-index: -1;
+    filter: brightness(0.95);
+}
