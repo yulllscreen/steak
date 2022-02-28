@@ -40,7 +40,7 @@ body {
     border-radius: 29% 71% 10% 10% / 62% 82% 18% 38% ;
     width: 500px;
     height: 200px;
-    background: #934E31;
+    background: repeating-linear-gradient(30deg, transparent 0px, transparent var(--offset_1), var(--steak_darker_color) var(--offset_1), var(--steak_darker_color) var(--offset_2)), repeating-linear-gradient(-30deg, transparent 0px, transparent var(--offset_1), var(--steak_darker_color) var(--offset_1), var(--steak_darker_color) var(--offset_2)) #934E31;
     border: 10px solid var(--steak_darker_color);
     box-shadow: 0 50px 0 0 var(--steak_body_color), 0 30px 0 0 var(--steak_body_color), 0 10px 0 0 var(--steak_body_color);
 }
